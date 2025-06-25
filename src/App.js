@@ -30,7 +30,7 @@ function App() {
     });
 
   return (<div>
-  <div>Hello {User.userDetails}</div>
+  <div>Hello {User}</div>
   <a href="/.auth/login/aad">Microsoft login</a> 
   </div>
   )
