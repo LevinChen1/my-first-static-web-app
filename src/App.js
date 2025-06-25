@@ -40,9 +40,17 @@ function App() {
     <a href="/.auth/login/aad">Microsoft login</a> 
   </div>
   );
+
   if (!data) return(
     <div>
   <div>No data available</div>
+    <a href="/.auth/login/aad">Microsoft login</a> 
+  </div>
+  );
+
+  if (data.clientPrincipal === null) return(
+    <div>
+  <div>Please login</div>
     <a href="/.auth/login/aad">Microsoft login</a> 
   </div>
   );
