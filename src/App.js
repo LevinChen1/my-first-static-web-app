@@ -7,17 +7,15 @@ function App() {
     const response = await fetch('/.auth/me');
     const payload = await response.json();
     const { clientPrincipal } = payload;
+    console.log(clientPrincipal)
     return clientPrincipal;
   }
-
-  (async () => {
-  console.log(await getUserInfo());
-  })();
 
 
   return (<div>
   <div>Hello {value}</div>
   <a href="/.auth/login/aad">Microsoft login</a> 
+  <button onClick={getUserInfo()}></button>
   </div>
   )
   ;
