@@ -51,6 +51,7 @@ function App() {
     <div>
       <h1>Data Loaded</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
+      <a href="/.auth/logout">Log out</a>
     </div>
   );
   // };
