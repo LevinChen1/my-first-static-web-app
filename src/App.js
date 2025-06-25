@@ -34,8 +34,18 @@ function App() {
     };
   fetchData();
   }, []);
-  if (loading) return <div>Loading...</div>;
-  if (!data) return <div>No data available</div>;
+  if (loading) return(
+    <div>
+  <div>Loading data....</div>
+    <a href="/.auth/login/aad">Microsoft login</a> 
+  </div>
+  );
+  if (!data) return(
+    <div>
+  <div>No data available</div>
+    <a href="/.auth/login/aad">Microsoft login</a> 
+  </div>
+  );
 
   return (
     <div>
