@@ -17,7 +17,7 @@ function App() {
   // })();
   
   // const UseApiData = (url) => {
-  url = '/.auth/me'
+  const url = '/.auth/me'
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
