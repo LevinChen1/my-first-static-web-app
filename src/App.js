@@ -15,7 +15,7 @@ function App() {
   return (<div>
   <div>Hello {value}</div>
   <a href="/.auth/login/aad">Microsoft login</a> 
-  <button onclick="getUserInfo()"></button>
+  <button onclick={getUserInfo()}></button>
   </div>
   )
   ;
