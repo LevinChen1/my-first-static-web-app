@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   const value = 'HH';
-  var User = {}
+  // var User = {}
   async function getUserInfo() {
     const response = await fetch('/.auth/me');
     const payload = await response.json();
@@ -12,8 +12,8 @@ function App() {
 
   (async () => {
   User = await getUserInfo()
-  console.log(User);
-  console.log(User.userDetails);
+  // console.log(User);
+  console.log(await getUserInfo());
   })();
   
   // fetch('/.auth/me')
