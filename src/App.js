@@ -13,7 +13,7 @@ function App() {
   // (async () => {
   // console.log(await getUserInfo());
   // })();
-  var User = {}
+  // var User = {}
   fetch('/.auth/me')
     .then(response => {
       if (!response.ok) {
@@ -30,7 +30,7 @@ function App() {
     });
 
   return (<div>
-  <div>Hello {User}</div>
+  <div>Hello</div>
   <a href="/.auth/login/aad">Microsoft login</a> 
   </div>
   )
