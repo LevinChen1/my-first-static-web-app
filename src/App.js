@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 function App() {
-  const value = 'HH';
+  // const value = 'HH';
   // var User = {};
   // async function getUserInfo() {
   //   const response = await fetch('/.auth/me');
